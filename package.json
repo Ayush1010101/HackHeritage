@@ -1,0 +1,18 @@
+{
+  "name": "hackheritage24",
+  "version": "1.0.0",
+  "description": "Lesssssssssssggggggggoooooooooooo!!!!!!!",
+  "main": "index.js",
+  "scripts": {
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install",
+    "install-packages": "npm run install-frontend && npm run install-backend",
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run start --prefix backend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
