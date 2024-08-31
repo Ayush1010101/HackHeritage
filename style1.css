@@ -1,31 +1,3 @@
-/*h1 {
-    text-align: center;
-    margin-top: 30px;
-}
-img, p {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-p {
-    text-align: center;
-    font-size: xx-large;
-}
-.team {
-    margin-top: 20px;
-}
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-}
-body {
-    background-color: antiquewhite;
-}*/
-
 body {
     font-family: Arial, sans-serif;
     background-color: antiquewhite;
@@ -60,7 +32,7 @@ img {
 }
 
 p {
-    margin-top: 230px;
+    margin-top: 280px;
     margin-left: -60px;
     font-size: large;
 }
