@@ -1,10 +1,16 @@
-import './App.css'
+import React from 'react';
+import NavBar from './components/NavBar';
+import MainContent from './components/MainContent';
 
-function App() {
+import './App.css'; // Import global styles or main CSS file
 
+const App = () => {
   return (
-    <div></div>
-  )
-}
+    <div className="container">
+      <NavBar />
+      <MainContent />
+    </div>
+  );
+};
 
-export default App
+export default App;
