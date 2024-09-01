@@ -1,105 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>CureX | Login & Register</title>
-</head>
-<body>
-<<<<<<< HEAD
- <div class="wrapper">   
-=======
- <div class="wrapper">
-    <nav class="nav">
-        <div class="nav-logo">
-            <p>CureX</p>
-        </div>
-        <div class="nav-menu" id="navMenu">
-            <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="contact.html" class="link">Contact Us</a></li>
-                <li><a href="#" class="link">Services</a></li>
-                <li><a href="about.html" class="link">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-        </div>
-    </nav>   
->>>>>>> e3fb3cfc87560f290df2578f1090f1e26d6282f4
-    <div class="form-box">
-        <div class="login-container" id="login">
-            <div class="top">
-                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                <header>Login</header>
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <title>Curex | Dashboard</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    <body>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#" class="logo">
+              <img src="image/logo.jpg" alt="logo">
+              <span class="nav-item">DashBoard</span>
+            </a></li>
+            <li><a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Profile</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-solid fa-bucket"></i>
+              <span class="nav-item">My Orders</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-solid fa-stethoscope"></i>
+              <span class="nav-item">Check Symptoms</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-solid fa-pills"></i>
+              <span class="nav-item">My Medicines</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Settings</span>
+            </a></li>
+            <li><a href="">
+              <i class="fas fa-question-circle"></i>
+              <span class="nav-item">Help</span>
+            </a></li>
+            <li><a href="" class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+          </ul>
+        </nav>
+    
+        <section class="main">
+          <div class="main-top">
+            <h1>Personal Info</h1>
+            <i class="fas fa-user-cog"></i>
+          </div>
+          <div class="main-skills">
+            <div class="card">
+              <i class="fas fa-solid fa-hospital"></i>
+              <h3>Book a Bed</h3>
+              <p>Book your desired bed at your nearest Hospital</p>
+              <button>Book Now</button>
             </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Username or Email">
-                <i class="bx bx-user"></i>
+            <div class="card">
+              <i class="fab fa-solid fa-bed-pulse"></i>
+              <h3>Book Hospital Visit</h3>
+              <p>Book an appointment at your prefered Hospital</p>
+              <button>Book Now</button>
             </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
+            <div class="card">
+                <i class="fas fa-solid fa-pills"></i>
+              <h3>Buy Meds</h3>
+              <p>Now Buy your required medicines at a discounted price</p>
+              <button>Buy Now</button>
             </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Sign In">
+            <div class="card">
+                <i class='bx bx-plus-medical' ></i>
+              <h3>Ambulance</h3>
+              <p>We provide Ambulance services at your doorstep</p>
+              <button>Book Now</button>
             </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="login-check">
-                    <label for="login-check"> Remember Me</label>
-                </div>
-                <div class="two">
-                    <label><a href="#">Forgot password?</a></label>
-                </div>
-            </div>
-        </div>
+          </div>
+    
+          <section class="main-course">
+            <h1>My History</h1>
+            <div class="course-box">
+              <ul>
+                <li class="active">Records</li>
+                <li>Prescriptions</li>
+                <li>Doctors</li>
+                <li>Medicines</li>
+              </ul>
+              <div class="course">
+                <div class="box">
+                  <h3>Reports</h3>
+                  <p>You are making some great progress, keep it up and do remember to take your meds on time.</p>
+                  <button>View</button>
 
-        <div class="register-container" id="register">
-            <div class="top">
-                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                <header>Sign Up</header>
-            </div>
-            <div class="two-forms">
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Firstname">
-                    <i class="bx bx-user"></i>
                 </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Lastname">
-                    <i class="bx bx-user"></i>
+                <div class="box">
+                  <h3>Treatments</h3>
+                  <p>50% - progress</p>
+                  <button>View</button>
                 </div>
-            </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Email">
-                <i class="bx bx-envelope"></i>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password">
-                <i class="bx bx-lock-alt"></i>
-            </div>
-            <div class="input-box">
-                <input type="submit" class="submit" value="Register">
-            </div>
-            <div class="two-col">
-                <div class="one">
-                    <input type="checkbox" id="register-check">
-                    <label for="register-check"> Remember Me</label>
+                <div class="box">
+                  <h3>Tests Pending</h3>
+                  <p>none</p>
+                  <button>View</button>
                 </div>
-                <div class="two">
-                    <label><a href="#">Terms & conditions</a></label>
-                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>   
-<script src="script.js"></script>
-</body>
-</html>
+          </section>
+        </section>
+      </div>
+    </body>
+    </html>
