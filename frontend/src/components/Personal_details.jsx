@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Personal_details.scss" ;
 function PersonalDetails() {
   return (
     <div className="container light-style flex-grow-1 container-p-y">
