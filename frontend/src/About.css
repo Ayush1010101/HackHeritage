@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(234, 234, 230);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color:darkblue;
+}*/
+h1 {
+    position: relative;
+    text-align: center;
+    color: rgb(20, 18, 18);
+    font-size: 60px;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1:hover {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+        0 3px 0 rgb(117, 117, 243), 0 4px 0 rgb(117,117,243),
+        0 5px 0 rgb(117,117,243), 0 6px 0 rgb(117,117,243),
+        0 7px 0 rgb(117,117,243), 0 8px 0 rgb(117,117,243),
+        0 9px 0 rgb(117,117,243), 0 10px 0 rgb(117,117,243),
+        0 11px 0 rgb(117,117,243), 0 12px 0 rgb(117,117,243),
+        0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.team-member {
+    margin:auto ;
+}
+img {
+    width: 240%;
+    box-shadow:1px 1px 21px rgb(63, 63, 236);
+}
+
+p {
+    margin-top: 380px;
+    margin-left: -60px;
+    font-size: large;
+}
