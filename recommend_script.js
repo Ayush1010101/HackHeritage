@@ -4,7 +4,7 @@ document.getElementById('recommendation-form').addEventListener('submit', async 
     const address = document.getElementById('address').value;
 
     try {
-        const response = await fetch('http://localhost:3000/recommend', {
+        const response = await fetch('http://localhost:5000/recommend', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
