@@ -13,6 +13,8 @@ app.use(bodyParser.json());
 
 const GOOGLE_API_KEY = process.env.GOOGLE_MAPS_API_KEY;
 
+console.log(GOOGLE_API_KEY)
+
 if (!GOOGLE_API_KEY) {
     console.error("Error: GOOGLE_API_KEY is not set in the .env file.");
     process.exit(1); // Exit the application if the API key is missing
