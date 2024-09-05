@@ -24,9 +24,9 @@ app.use(express.json())
 app.use(cookieParser())
 //app.use('/auth' , authRouter)
 
-app.get('/' , checkAuth , (req , res) => {
-    res.send('Hello world')
-})
+// app.get('/' , checkAuth , (req , res) => {
+//     res.send('Hello world')
+// })
 
 // polluting start
 app.use(express.static(path.join(__dirname , '..')))
@@ -46,10 +46,20 @@ app.get('/personal' , (req , res) => {
     res.sendFile(path.join(__dirname , '..' , '/personal_details.html'))
 })
 app.get('/recommendation' , (req , res) => {
-    res.sendFile(path.join(__dirname , '..' , '/recommendation.html'))
+    res.sendFile(path.join(__dirname , '..' , '/recommedation.html'))
 })
 app.get('/signup' , (req , res) => {
     res.sendFile(path.join(__dirname , '..' , '/signup.html'))
+})
+app.get('/visit' , (req ,res) => {
+    res.sendFile(path.join(__dirname , '..' , '/visit.html'))
+})
+
+app.get('/recommend' , (req , res) => {
+    res.attachment(path.join(__dirname , '..' , 'Hospital_Ratings3.csv'))
+})
+app.get('/' , (req , res) => {
+    res.sendFile(path.join(__dirname , '..' , '/link.html'))
 })
 
 const startServer = async () => {
