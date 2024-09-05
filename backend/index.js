@@ -43,7 +43,7 @@ app.get('/login' , (req , res) => {
     res.sendFile(path.join(__dirname , '..' , '/login.html'))
 })
 app.get('/personal' , (req , res) => {
-    res.sendFile(path.join(__dirname , '..' , '/personal.html'))
+    res.sendFile(path.join(__dirname , '..' , '/personal_details.html'))
 })
 app.get('/recommendation' , (req , res) => {
     res.sendFile(path.join(__dirname , '..' , '/recommendation.html'))
