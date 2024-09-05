@@ -53,7 +53,7 @@ app.get('/signup' , (req , res) => {
 })
 
 const startServer = async () => {
-    await mongoose.connect('mongodb://localhost:27017/hackheritage')
+    //await mongoose.connect('mongodb://localhost:27017/hackheritage')
     app.listen(PORT , () => {
         console.log(chalk.blue(`Listening on url http://localhost:${PORT}/`))
     })
