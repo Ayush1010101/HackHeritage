@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 body {
-    background: url("images/personal.webp");
     margin-top: 20px;
+    background: url("images/personal.webp");
 }
 
 .ui-w-80 {
@@ -35,8 +35,8 @@ label.btn {
 
 .card.overflow-hidden{
     background-image: url("images/wall.jpg");
-
 }
+
 
 .account-settings-fileinput {
     position  : absolute;

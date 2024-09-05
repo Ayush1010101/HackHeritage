@@ -11,10 +11,6 @@ const App = () => {
       <NavBar />
       <MainContent />
     </div>
-     <Routes>
-     <Route path='/login' elements={<CureXLogin/>} />
-     <Route path='/signup' elements={<SignUp/>} />
-   </Routes>
    </>
 
   );
